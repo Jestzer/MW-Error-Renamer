@@ -1,7 +1,14 @@
-using MW_Error_Renamer;
-
-var builder = Host.CreateApplicationBuilder(args);
-builder.Services.AddHostedService<Worker>();
-
-var host = builder.Build();
-host.Run();
+namespace MW_Error_Renamer
+{
+    internal static class Program
+    {
+        [STAThread]
+        static void Main()
+        {
+            // To customize application configuration such as set high DPI settings or default font,
+            // see https://aka.ms/applicationconfiguration.
+            ApplicationConfiguration.Initialize();
+            Application.Run(new ProgramWatcher());
+        }
+    }
+}
