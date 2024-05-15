@@ -13,5 +13,10 @@ namespace MW_Error_Renamer
         {
             this.Close();
         }
+
+        private void HelpButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("just Google the error code ffs");
+        }
     }
 }
