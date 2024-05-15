@@ -33,7 +33,7 @@ namespace MW_Error_Renamer
 
                             this.Invoke(new Action(() =>
                             {
-                                new ErrorWindow("Hello world!").ShowDialog();
+                                new ErrorWindow("Sike! Stop pointing to things that don't exist.\nLicense Manager Error: u dumb.").ShowDialog();
                             }));
 
                             break;
@@ -44,7 +44,7 @@ namespace MW_Error_Renamer
                         MessageBox.Show($"Error showing your custom error message: {ex.Message}");
                     }
                 }
-                await Task.Delay(50, stoppingToken); // Wait before checking again.
+                await Task.Delay(1000, stoppingToken); // Wait before checking again.
             }
         }
     }

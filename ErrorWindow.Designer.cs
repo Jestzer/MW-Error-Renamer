@@ -96,6 +96,7 @@
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "ErrorWindow";
+            ShowIcon = false;
             SizeGripStyle = SizeGripStyle.Hide;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "You idiot";
@@ -107,7 +108,7 @@
         #endregion
 
         private Label MainLabel;
-        private Button HelpButton;
+        private new Button HelpButton;
         private Button GiveUpButton;
         private PictureBox ErrorIcon;
         private Panel panel1;
